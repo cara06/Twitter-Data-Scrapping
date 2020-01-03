@@ -11,14 +11,14 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
 
-#Twitter credentials for the app. 
+#Twitter credentials for the application. You can get this from Twitter's API
 # Input your credentials below:
 consumer_key = 'eHszxxxxxxxxxxxxxxxxxxxxx'
 consumer_secret = 'kLG3jgxxxxxxxxxxxxxxxxxxxxxx'
 access_key= '115xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 access_secret = 'l4bQxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
-#This passes twitter credentials to tweepy
+#This passes twitter credentials to Tweepy
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_key, access_secret)
 api = tweepy.API(auth)
